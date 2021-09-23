@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #456990;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #114B5F;
+  color: white;
+}
+.active {
+  background-color: #60E1E0;
+}
+h1 {
+  text-align: center;
+}
+.center {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.meme-grid-container {
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+
+.meme-grid {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.meme-grid-item {
+  border: 1px solid #fff;
+}
+
+.meme-grid-item img {
+  width: 32vw;
+  height: 50vh;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #D3D3D3; /*light gray*/
+  }
+  .meme-grid-item img {
+    width: 32vw;
+    height: 25vh;
+  }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px){
+
+}
+
+/*Desktop*/
+@media only screen and (min-width: 961px) {
+
+}
